@@ -1,4 +1,4 @@
-repositoryUrl: git@github.com:UpHabit/semantic-release-jira-releases.git
+repositoryUrl: git@github.com:Kwasniewski/semantic-release-jira-releases.git
 branch: master
 dryRun: false
 debug: false
