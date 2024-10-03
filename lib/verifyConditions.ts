@@ -1,9 +1,9 @@
 import SemanticReleaseError from '@semantic-release/error';
 
 import { makeClient } from './jira';
-import { PluginConfig, PluginContext } from './types';
+import { PluginConfig, GenerateNotesContext } from './types';
 
-export async function verifyConditions(config: PluginConfig, context: PluginContext): Promise<void> {
+export async function verifyConditions(config: PluginConfig, context: GenerateNotesContext): Promise<void> {
   const { networkConcurrency } = config;
 
   if (typeof config.jiraHost !== 'string') {
@@ -56,5 +56,5 @@ export async function verifyConditions(config: PluginConfig, context: PluginCont
     throw new SemanticReleaseError(`JIRA_AUTH must be a string`);
   }
   const jira = makeClient(config, context);
-  await jira.project.getProject({ projectIdOrKey: config.projectId });
+  await jira.getProject(config.projectId);
 }

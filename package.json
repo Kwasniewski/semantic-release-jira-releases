@@ -14,7 +14,7 @@
   "dependencies": {
     "@semantic-release/error": "^2.2.0",
     "@types/request": "^2.48.4",
-    "jira-connector": "^3.1.0",
+    "jira-client": "^8.2.2",
     "lodash": "^4.17.19",
     "p-limit": "^2.2.2",
     "tslib": "^1.11.1"
@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@types/jest": "^26.0.5",
+    "@types/jira-client": "^7.1.9",
     "@types/lodash": "^4.14.149",
     "@types/node": "^13.9.5",
     "@types/signale": "^1.4.0",

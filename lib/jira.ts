@@ -1,12 +1,11 @@
-import JiraClient from 'jira-connector';
+import JiraApi from 'jira-client'
 
-import { PluginConfig, PluginContext } from './types';
+import { PluginConfig, PluginContext } from './types'
 
-export function makeClient(config: PluginConfig, context: PluginContext): JiraClient {
-  return new JiraClient({
+export function makeClient(config: PluginConfig, context: PluginContext): JiraApi {
+  return new JiraApi({
+    protocol: 'https',
     host: config.jiraHost,
-    basic_auth: {
-      base64: context.env.JIRA_AUTH,
-    },
+    bearer: context.env.JIRA_AUTH,
   });
 }
