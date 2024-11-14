@@ -1,13 +1,13 @@
 {
-  "name": "@kwasniewski/semantic-release-jira-releases",
-  "version": "0.8.0",
+  "name": "@jkwas/semantic-release-jira-releases",
+  "version": "0.8.1",
   "main": "dist/lib/index.js",
-  "repository": "https://github.com/Kwasniewski/semantic-release-jira-releases",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwasniewski/semantic-release-jira-releases.git"
+  },
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "prepublishOnly": "mkdir -p dist && rm -rf dist && tsc -p .",
     "lint": "tslint -p .",

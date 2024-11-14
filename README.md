@@ -1,10 +1,6 @@
 # semantic-release-jira-releases
 
-[**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to publish a jira release.
-
-[![Travis](https://img.shields.io/travis/UpHabit/semantic-release-jira-releases.svg)](https://travis-ci.org/UpHabit/semantic-release-jira-releases)
-
-[![npm latest version](https://img.shields.io/npm/v/semantic-release-jira-releases/latest.svg)](https://www.npmjs.com/package/semantic-release-jira-releases)
+[**semantic-release**](https://github.com/Kwasniewski/semantic-release-jira-releases) plugin to publish a jira release.
 
 
 | Step               | Description                                                                                                                                   |
@@ -15,8 +11,8 @@
 ## Install
 
 ```bash
-$ npm install --save-dev semantic-release-jira-releases
-$ yarn add --dev semantic-release-jira-releases
+$ npm install --save-dev @joseph.kwasniewski/semantic-release-jira-releases
+$ yarn add --dev @joseph.kwasniewski/semantic-release-jira-releases
 ```
 
 ### Configuration
