@@ -82,20 +82,7 @@ async function editIssueFixVersions(config: PluginConfig, context: GenerateNotes
       );
     }
   } catch (err) {
-    const allowedStatusCodes = [400, 404];
-    let { statusCode } = err;
-    if (typeof err === 'string') {
-      try {
-        err = JSON.parse(err);
-        statusCode = statusCode || err.statusCode;
-      } catch (err) {
-          // it's not json :shrug:
-      }
-    }
-    if (allowedStatusCodes.indexOf(statusCode) === -1) {
-      throw err;
-    }
-    context.logger.error(`Unable to update issue ${issueKey} statusCode: ${statusCode}`);
+    context.logger.error(`Unable to update issue ${issueKey} err: ${err}`);
   }
 }
 
