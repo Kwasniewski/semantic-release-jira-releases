@@ -58,7 +58,7 @@ async function findOrCreateVersion(config: PluginConfig, context: GenerateNotesC
       description: descriptionText,
       released: Boolean(config.released),
       releaseDate: config.setReleaseDate ? (new Date().toISOString()) : undefined,
-      startDate: config.setReleaseDate ? (new Date().toISOString()) : undefined,
+      startDate: config.setStartDate ? (new Date().toISOString()) : undefined,
     });
   }
 

@@ -117,4 +117,9 @@ export interface PluginConfig extends BaseConfig {
    * include the release date when creating a release in jira
    */
   setReleaseDate?: boolean;
+
+  /**
+   * include the start date when creating a release in jira
+   */
+  setStartDate?: boolean;
 }
